@@ -2,7 +2,6 @@ import fs from "fs";
 import path from "path";
 import crypto from "crypto";
 
-console.log(path.resolve);
 export default class DirWatcher {
 	constructor({ emitter }) {
 		this.emitter = emitter;
