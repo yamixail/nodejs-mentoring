@@ -22,10 +22,24 @@ export default class Importer {
 	}
 
 	parseCsv(buffer) {
-		const data = buffer.toString().split(/\r\n|\r|\n/);
+		let data = buffer.toString().split(/\r\n|\r|\n/);
 
 		while (!data[data.length - 1]) data.pop();
 
-		return data.map(string => string.split(","));
+		data = data.map(string => string.split(","));
+		const keys = data.shift();
+		const result = [];
+
+		for (let str of data) {
+			const item = {};
+
+			for (let i in str) {
+				item[keys[i]] = str[i];
+			}
+
+			result.push(item);
+		}
+
+		return result;
 	}
 }

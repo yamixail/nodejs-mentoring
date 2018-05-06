@@ -14,11 +14,11 @@ export default class DirWatcher {
 
 	getFileHash(filePath) {
 		try {
-			const fileContent = fs.readFileSync(filePath);
+			const fileStat = fs.statSync(filePath);
 
 			return crypto
 				.createHash("sha1")
-				.update(fileContent)
+				.update(JSON.stringify(fileStat))
 				.digest("hex");
 		} catch (err) {
 			console.log(err);
@@ -27,9 +27,7 @@ export default class DirWatcher {
 		}
 	}
 
-	addFile(path) {
-		const hash = this.getFileHash(path);
-
+	addFile(path, hash) {
 		this._files.push({ path, hash });
 		this.emit("added", path);
 	}
