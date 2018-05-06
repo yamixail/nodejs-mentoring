@@ -26,15 +26,17 @@ export default class Importer {
 
 		while (!data[data.length - 1]) data.pop();
 
-		data = data.map(string => string.split(","));
-		const keys = data.shift();
+		const keys = data[0].split(",").map(val => val.trim());
 		const result = [];
 
-		for (let str of data) {
+		for (let i = 1; i < data.length; i++) {
+			const str = data[i].split(",");
 			const item = {};
 
-			for (let i in str) {
-				item[keys[i]] = str[i];
+			for (let j in str) {
+				if (!str[j]) continue;
+
+				item[keys[j]] = str[j];
 			}
 
 			result.push(item);

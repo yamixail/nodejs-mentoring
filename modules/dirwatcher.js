@@ -12,14 +12,9 @@ export default class DirWatcher {
 		this.emitter.emit(`dirwatcher:${eventName}`, ...attrs);
 	}
 
-	getFileHash(filePath) {
+	getFileMTime(filePath) {
 		try {
-			const fileStat = fs.statSync(filePath);
-
-			return crypto
-				.createHash("sha1")
-				.update(JSON.stringify(fileStat))
-				.digest("hex");
+			return +fs.statSync(filePath).mtime;
 		} catch (err) {
 			console.log(err);
 
@@ -27,15 +22,15 @@ export default class DirWatcher {
 		}
 	}
 
-	addFile(path, hash) {
-		this._files.push({ path, hash });
+	addFile(path, mTime) {
+		this._files.push({ path, mTime });
 		this.emit("added", path);
 	}
 
-	updateFile(index, newHash) {
+	updateFile(index, newMTime) {
 		const currentFile = this._files[index];
 
-		currentFile.hash = newHash;
+		currentFile.mTime = newMTime;
 		this.emit("changed", currentFile.path);
 	}
 
@@ -58,20 +53,20 @@ export default class DirWatcher {
 				);
 
 				currentFilesList.forEach(filePath => {
-					const fileHash = this.getFileHash(filePath);
+					const fileMTime = this.getFileMTime(filePath);
 					const index = this._files.findIndex(
 						file => file.path === filePath
 					);
 
-					if (!fileHash) return;
+					if (!fileMTime) return;
 
 					if (index === -1) {
-						this.addFile(filePath, fileHash);
+						this.addFile(filePath, fileMTime);
 					} else {
 						const currentFile = this._files[index];
 
-						if (currentFile.hash !== fileHash) {
-							this.updateFile(index, fileHash);
+						if (currentFile.mTime !== fileMTime) {
+							this.updateFile(index, fileMTime);
 						}
 					}
 				});
