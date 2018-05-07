@@ -9,13 +9,9 @@ console.log(appConfig.name);
 
 const emitter = new EventEmitter();
 const watcher = new DirWatcher({ emitter });
-const myImporter = new Importer();
+
+new Importer({ emitter }).listen(console.log, console.error);
 
 watcher.watch("./data", 1000);
 
-emitter.on("dirwatcher:changed", fileName => {
-	myImporter
-		.import(fileName)
-		.then(console.log)
-		.catch(console.error);
-});
+

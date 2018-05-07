@@ -1,6 +1,19 @@
 import fs from "fs";
 
 export default class Importer {
+	constructor({ emitter }) {
+		this.emitter = emitter;
+	}
+
+	listen(callback, errback) {
+		this.emitter.on("dirwatcher:changed", filePath => {
+			this
+				.import(filePath)
+				.then(callback)
+				.catch(errback);
+		});
+	}
+
 	import(filePath) {
 		return new Promise((resolve, reject) => {
 			fs.readFile(filePath, (err, buffer) => {
