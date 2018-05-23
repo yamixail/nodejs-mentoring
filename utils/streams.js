@@ -6,8 +6,6 @@ const path = require("path");
 const Importer = require("../modules/importer").default;
 const myImporter = new Importer({});
 
-const notImplemented = () => process.stdout.write("Not implemented\n");
-
 const actions = [
 	{
 		name: "reverse",
