@@ -150,10 +150,9 @@ const actions = [
 					);
 
 					try {
-						const jsonStream = fs.createWriteStream(jsonFilePath);
-						const str = JSON.stringify(myImporter.parseCsv(result));
-
-						jsonStream.end(str);
+						fs
+							.createWriteStream(jsonFilePath)
+							.end(JSON.stringify(myImporter.parseCsv(result)));
 
 						console.log("done");
 					} catch (e) {
