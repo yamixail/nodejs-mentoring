@@ -1,6 +1,7 @@
 const program = require("commander");
 const through = require("through2");
 const fs = require("fs");
+const path = require("path");
 
 const Importer = require("../modules/importer").default;
 const myImporter = new Importer({});
@@ -10,7 +11,7 @@ const notImplemented = () => process.stdout.write("Not implemented\n");
 const actions = [
 	{
 		name: "reverse",
-		run: function() {
+		run: () => {
 			process.stdin.setEncoding("utf8");
 
 			process.stdin.on("readable", () => {
@@ -37,7 +38,7 @@ const actions = [
 	},
 	{
 		name: "transform",
-		run: function() {
+		run: () => {
 			const processing = through(write, end);
 
 			process.stdin.pipe(processing).pipe(process.stdout);
@@ -60,7 +61,7 @@ const actions = [
 	},
 	{
 		name: "outputFile",
-		run: function(options) {
+		run: options => {
 			if (!options.file) {
 				console.error(
 					"Option 'file' is required for 'outputFile' action"
@@ -108,7 +109,58 @@ const actions = [
 	},
 	{
 		name: "convertToFile",
-		run: notImplemented
+		run: options => {
+			if (!options.file) {
+				console.error(
+					"Option 'file' is required for 'convertToFile' action"
+				);
+				process.exit();
+			}
+
+			const filePath = path.resolve(options.file);
+			const fileExt = path.extname(filePath);
+
+			if (fileExt !== ".csv") {
+				console.error(`File extension should be only CSV`);
+				process.exit();
+			}
+
+			if (!fs.existsSync(filePath)) {
+				console.error(`File ${filePath} doesn't exist`);
+				process.exit();
+			}
+
+			let result = "";
+			const write = (buffer, encoding, next) => {
+				result += buffer.toString();
+				next();
+			};
+			const end = done => done();
+			const processing = through(write, end);
+
+			fs
+				.createReadStream(filePath)
+				.pipe(processing)
+				.on("finish", () => {
+					const dirName = path.dirname(filePath);
+					const fileName = path.basename(filePath, fileExt);
+					const jsonFilePath = path.resolve(
+						dirName,
+						`${fileName}.json`
+					);
+
+					// if (fs.existsSync(jsonFilePath)) {
+					// 	fs.unlinkSync(jsonFilePath);
+					// }
+
+					const jsonStream = fs.createWriteStream(jsonFilePath);
+					const str = JSON.stringify(myImporter.parseCsv(result));
+
+					jsonStream.end(str);
+
+					console.log("done");
+				});
+		}
 	}
 ];
 
