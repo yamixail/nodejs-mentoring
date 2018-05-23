@@ -149,10 +149,6 @@ const actions = [
 						`${fileName}.json`
 					);
 
-					// if (fs.existsSync(jsonFilePath)) {
-					// 	fs.unlinkSync(jsonFilePath);
-					// }
-
 					const jsonStream = fs.createWriteStream(jsonFilePath);
 					const str = JSON.stringify(myImporter.parseCsv(result));
 
