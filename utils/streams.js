@@ -6,6 +6,13 @@ const path = require("path");
 const Importer = require("../modules/importer").default;
 const myImporter = new Importer({});
 
+const breakIfDoesntExist = filePath => {
+	if (!fs.existsSync(filePath)) {
+		console.error(`File ${options.file} doesn't exist`);
+		process.exit();
+	}
+};
+
 const actions = [
 	{
 		name: "reverse",
@@ -67,11 +74,8 @@ const actions = [
 				process.exit();
 			}
 
-			if (!fs.existsSync(options.file)) {
-				console.error(`File ${options.file} doesn't exist`);
-			} else {
-				fs.createReadStream(options.file).pipe(process.stdout);
-			}
+			breakIfDoesntExist(options.file);
+			fs.createReadStream(options.file).pipe(process.stdout);
 		}
 	},
 	{
@@ -84,25 +88,23 @@ const actions = [
 				process.exit();
 			}
 
-			if (!fs.existsSync(options.file)) {
-				console.error(`File ${options.file} doesn't exist`);
-			} else {
-				let result = "";
-				const write = (buffer, encoding, next) => {
-					result += buffer.toString();
-					next();
-				};
-				const end = done => done();
-				const processing = through(write, end);
+			breakIfDoesntExist(options.file);
 
-				fs
-					.createReadStream(options.file)
-					.pipe(processing)
-					.on("finish", () => {
-						const str = JSON.stringify(myImporter.parseCsv(result));
-						process.stdout.write(str);
-					});
-			}
+			let result = "";
+			const write = (buffer, encoding, next) => {
+				result += buffer.toString();
+				next();
+			};
+			const end = done => done();
+			const processing = through(write, end);
+
+			fs
+				.createReadStream(options.file)
+				.pipe(processing)
+				.on("finish", () => {
+					const str = JSON.stringify(myImporter.parseCsv(result));
+					process.stdout.write(str);
+				});
 		}
 	},
 	{
@@ -118,13 +120,10 @@ const actions = [
 			const filePath = path.resolve(options.file);
 			const fileExt = path.extname(filePath);
 
+			breakIfDoesntExist(filePath);
+
 			if (fileExt !== ".csv") {
 				console.error(`File extension should be only CSV`);
-				process.exit();
-			}
-
-			if (!fs.existsSync(filePath)) {
-				console.error(`File ${filePath} doesn't exist`);
 				process.exit();
 			}
 
