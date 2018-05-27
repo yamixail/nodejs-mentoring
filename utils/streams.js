@@ -2,6 +2,7 @@ const program = require("commander");
 const through = require("through2");
 const fs = require("fs");
 const path = require("path");
+const util = require("util");
 
 const Importer = require("../modules/importer").default;
 const myImporter = new Importer({});
@@ -156,6 +157,52 @@ const actions = [
 						console.error(e);
 					}
 				});
+		},
+	},
+	{
+		name: "bundler",
+		run: options => {
+			if (!options.path) {
+				console.error(
+					"Option 'path' is required for 'bundler' action"
+				);
+				process.exit();
+			}
+
+			const dirPath = path.resolve(options.path);
+
+			if (!fs.existsSync(dirPath)) {
+				console.error(`Path ${options.path} doesn't exist`);
+				process.exit();
+			}
+
+			const bundleFilePath = path.resolve(dirPath, 'bundle.css');
+
+			if (fs.existsSync(bundleFilePath)) {
+				fs.unlinkSync(bundleFilePath);
+			}
+
+			readDir = util.promisify(fs.readdir);
+			const bundleStream = fs.createWriteStream(bundleFilePath);
+
+			readDir(dirPath)
+				.then(currentFilesNames => {
+					const cssFilesList = currentFilesNames
+						.map(fileName =>
+							path.resolve(dirPath, fileName)
+						)
+						.filter(filePath => path.extname(filePath) === '.css');
+
+					cssFilesList.forEach(filePath => {
+						fs.createReadStream(filePath).pipe(bundleStream);
+					});
+
+					bundleStream.on("finish", () => {
+						bundleStream.end(null);
+						console.log('Bundle successfully created.');
+					});
+				})
+				.catch(console.error);
 		}
 	}
 ];
@@ -188,6 +235,7 @@ program
 			.join(", ")}]`
 	)
 	.option("-f, --file <fileName>", "optional path to file for some actions")
+	.option("-p, --path <dirPath>", "optional parameter path only for bundler")
 	.parse(process.argv);
 
 const actionOption = program.options.find(option => option.long === `--action`);
