@@ -1,14 +1,13 @@
-import fs from "fs";
+const fs = require("fs");
 
-export default class Importer {
+class Importer {
 	constructor({ emitter }) {
 		this.emitter = emitter;
 	}
 
 	listen(callback, errback) {
 		this.emitter.on("dirwatcher:changed", filePath => {
-			this
-				.import(filePath)
+			this.import(filePath)
 				.then(callback)
 				.catch(errback);
 		});
@@ -58,3 +57,7 @@ export default class Importer {
 		return result;
 	}
 }
+
+module.exports = {
+	default: Importer
+};
