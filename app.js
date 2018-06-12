@@ -1,7 +1,5 @@
-require("babel-core").transformFile("./index.js", (err, result) => {
-	if (err) {
-		return console.error(err);
-	}
+import express from "express";
 
-	eval(result.code);
-});
+const app = express();
+
+export default app;
