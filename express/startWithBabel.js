@@ -1,7 +1,12 @@
-require("babel-core").transformFile("./index.js", (err, result) => {
-	if (err) {
-		return console.error(err);
-	}
+const path = require("path");
 
-	eval(result.code);
-});
+require("babel-core").transformFile(
+	path.resolve(__dirname, "./index.js"),
+	(err, result) => {
+		if (err) {
+			return console.error(err);
+		}
+
+		eval(result.code);
+	}
+);

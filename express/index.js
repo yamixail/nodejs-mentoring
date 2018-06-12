@@ -1,6 +1,7 @@
 import "babel-register";
 
 import app from "./app";
+import router from "./routes";
 
 import cookieParser from "./middlewares/cookieParser";
 import queryParser from "./middlewares/queryParser";
@@ -11,6 +12,8 @@ app.listen(port, () => console.log(`App listening on port ${port}!`));
 
 app.use(cookieParser());
 app.use(queryParser());
+
+app.use("/api", router);
 
 app.get("/", (req, res) => {
 	res.json({
