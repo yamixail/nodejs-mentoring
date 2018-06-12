@@ -1,6 +1,15 @@
 import "babel-register";
-import app from "./app";
+import EventEmitter from "events";
 
-const port = process.env.PORT || 8080;
+import appConfig from "./config";
+import DirWatcher from "./modules/dirwatcher";
+import Importer from "./modules/importer";
 
-app.listen(port, () => console.log(`App listening on port ${port}!`));
+console.log(appConfig.name);
+
+const emitter = new EventEmitter();
+const watcher = new DirWatcher({ emitter });
+
+new Importer({ emitter }).listen(console.log, console.error);
+
+watcher.watch("./data", 1000);
