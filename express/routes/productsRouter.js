@@ -1,22 +1,16 @@
 import express from "express";
 
+import productsController from "../controllers/products";
+
 const router = express.Router();
 
 router
 	.route("/")
-	.get((req, res) => {
-		res.end("Returned ALL products");
-	})
-	.post((req, res) => {
-		res.end("Added NEW product and return it");
-	});
+	.get(productsController.getAll)
+	.post(productsController.createProduct);
 
-router.get("/:id", (req, res) => {
-	res.end(`Returned SINGLE product ${req.params.id}`);
-});
+router.get("/:id", productsController.getProduct);
 
-router.get("/:id/reviews", (req, res) => {
-	res.end(`Returned ALL reviews for a single product ${req.params.id}`);
-});
+router.get("/:id/reviews", productsController.getProductReviews);
 
 export default router;
