@@ -13,5 +13,3 @@ const watcher = new DirWatcher({ emitter });
 new Importer({ emitter }).listen(console.log, console.error);
 
 watcher.watch("./data", 1000);
-
-
