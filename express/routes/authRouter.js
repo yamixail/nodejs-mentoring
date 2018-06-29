@@ -15,16 +15,27 @@ router.post(
 	"/",
 	(req, res, next) => {
 		passport.authenticate("local", (err, user, info) => {
-			res.json({
-				err,
-				user,
-				info,
-				reqUser: req.user,
-				session: req.session
+			req.login(user, err => {
+				if (err) {
+					return res.end(err.message);
+				}
+
+				res.json({
+					err,
+					user,
+					info,
+					reqUser: req.user,
+					session: req.session
+				});
 			});
 		})(req, res, next);
 	},
 	authController.authenticationResponse
 );
+
+router.get("/logout", (req, res) => {
+	req.logout();
+	res.end("logout sucess");
+});
 
 export default router;
