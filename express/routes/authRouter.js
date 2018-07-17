@@ -13,29 +13,24 @@ const router = express.Router();
 
 router.post(
 	"/",
-	(req, res, next) => {
-		passport.authenticate("local", (err, user, info) => {
-			req.login(user, err => {
-				if (err) {
-					return res.end(err.message);
-				}
-
-				res.json({
-					err,
-					user,
-					info,
-					reqUser: req.user,
-					session: req.session
-				});
-			});
-		})(req, res, next);
-	},
+	passport.authenticate("local", { session: false }),
 	authController.authenticationResponse
 );
 
-router.get("/logout", (req, res) => {
-	req.logout();
-	res.end("logout sucess");
-});
+router.get("/facebook", passport.authenticate("facebook"));
+
+router.get(
+	"/facebook/callback",
+	passport.authenticate("facebook"),
+	authController.authenticationResponse
+);
+
+router.get("/google", passport.authenticate("google", { scope: ["profile"] }));
+
+router.get(
+	"/google/callback",
+	passport.authenticate("google"),
+	authController.authenticationResponse
+);
 
 export default router;

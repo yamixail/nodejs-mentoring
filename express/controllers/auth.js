@@ -16,7 +16,7 @@ auth.setUserInfo = (req, res, next) => {
 	next();
 };
 
-auth.authenticationResponse = (req, res, next) => {
+auth.authenticationResponse = (req, res) => {
 	if (!req.user) {
 		return res.json({
 			code: 404,

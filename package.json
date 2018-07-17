@@ -29,6 +29,8 @@
     "jsonwebtoken": "^8.3.0",
     "nodemon": "^1.17.3",
     "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth20": "^1.0.0",
     "passport-local": "^1.0.0",
     "through2": "^2.0.3"
   },
