@@ -1,6 +1,5 @@
 import "babel-register";
 import express from "express";
-import session from "express-session";
 
 import app from "./app";
 import router from "./routes";
@@ -16,7 +15,6 @@ app.listen(port, () => console.log(`App listening on port ${port}!`));
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(queryParser());
-app.use(session({ secret: "keyboard cat" }));
 
 applyPassportStrategies(app);
 
