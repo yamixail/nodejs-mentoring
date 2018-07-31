@@ -1,6 +1,8 @@
 import "babel-register";
 import express from "express";
 
+import db from "./models";
+
 import app from "./app";
 import router from "./routes";
 import applyPassportStrategies from "./strategies";
@@ -24,5 +26,14 @@ app.get("/", (req, res) => {
 		queries: req.parsedQuery
 	});
 });
+
+db.sequelize
+	.authenticate()
+	.then(() => {
+		console.log("Connection has been established successfully.");
+	})
+	.catch(err => {
+		console.error("Unable to connect to the database:", err);
+	});
 
 app.use("/api", router);

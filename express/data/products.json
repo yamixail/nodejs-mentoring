@@ -1,0 +1,863 @@
+[
+	{
+		"id":"HT-1000",
+		"name":"Notebook Basic 15",
+		"description":"Notebook Basic 15 with 2,80 GHz quad core, 15\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro",
+		"quantity":10,
+		"category":"Laptops"
+	},
+	{
+		"id":"HT-1001",
+		"name":"Notebook Basic 17",
+		"description":"Notebook Basic 17 with 2,80 GHz quad core, 17\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro",
+		"quantity":20,
+		"category":"Laptops"
+	},
+	{
+		"id":"HT-1002",
+		"name":"Notebook Basic 18",
+		"description":"Notebook Basic 18 with 2,80 GHz quad core, 18\" LCD, 8 GB DDR3 RAM, 1000 GB Hard Disc, Windows 8 Pro",
+		"quantity":10,
+		"category":"Laptops"
+	},
+	{
+		"id":"HT-1003",
+		"name":"Notebook Basic 19",
+		"description":"Notebook Basic 19 with 2,80 GHz quad core, 19\" LCD, 8 GB DDR3 RAM, 1000 GB Hard Disc, Windows 8 Pro",
+		"quantity":15,
+		"category":"Laptops"
+	},
+	{
+		"id":"HT-1007",
+		"name":"ITelO Vault",
+		"description":"Digital Organizer with State-of-the-Art Storage Encryption",
+		"quantity":15,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-1010",
+		"name":"Notebook Professional 15",
+		"description":"Notebook Professional 15 with 2,80 GHz quad core, 15\" Multitouch LCD, 8 GB DDR3 RAM, 500 GB SSD - DVD-Writer (DVD-R/+R/-RW/-RAM),Windows 8 Pro",
+		"quantity":16,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-1011",
+		"name":"Notebook Professional 17",
+		"description":"Notebook Professional 17 with 2,80 GHz quad core, 17\" Multitouch LCD, 8 GB DDR3 RAM, 500 GB SSD - DVD-Writer (DVD-R/+R/-RW/-RAM),Windows 8 Pro",
+		"quantity":17,
+		"category":"Laptops"
+	},
+	{
+		"id":"HT-1020",
+		"name":"ITelO Vault Net",
+		"description":"Digital Organizer with State-of-the-Art Encryption for Storage and Network Communications",
+		"quantity":14,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-1021",
+		"name":"ITelO Vault SAT",
+		"description":"Digital Organizer with State-of-the-Art Encryption for Storage and Secure Stellite Link",
+		"quantity":50,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-1022",
+		"name":"Comfort Easy",
+		"description":"32 GB Digital Assistant with high-resolution color screen",
+		"quantity":30,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-1023",
+		"name":"Comfort Senior",
+		"description":"64 GB Digital Assistant with high-resolution color screen and synthesized voice output",
+		"quantity":24,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-1030",
+		"name":"Ergo Screen E-I",
+		"description":"Optimum Hi-Resolution max. 1920 x 1080 @ 85Hz, Dot Pitch: 0.27mm",
+		"quantity":14,
+		"category":"Flat Screen Monitors"
+	},
+	{
+		"id":"HT-1031",
+		"name":"Ergo Screen E-II",
+		"description":"Optimum Hi-Resolution max. 1920 x 1200 @ 85Hz, Dot Pitch: 0.26mm",
+		"quantity":24,
+		"category":"Flat Screen Monitors"
+	},
+	{
+		"id":"HT-1032",
+		"name":"Ergo Screen E-III",
+		"description":"Optimum Hi-Resolution max. 2560 x 1440 @ 85Hz, Dot Pitch: 0.25mm",
+		"quantity":50,
+		"category":"Flat Screen Monitors"
+	},
+	{
+		"id":"HT-1035",
+		"name":"Flat Basic",
+		"description":"Optimum Hi-Resolution max. 1600 x 1200 @ 85Hz, Dot Pitch: 0.24mm",
+		"quantity":23,
+		"category":"Flat Screen Monitors"
+	},
+	{
+		"id":"HT-1036",
+		"name":"Flat Future",
+		"description":"Optimum Hi-Resolution max. 2048 x 1080 @ 85Hz, Dot Pitch: 0.26mm",
+		"quantity":22,
+		"category":"Flat Screen Monitors"
+	},
+	{
+		"id":"HT-1037",
+		"name":"Flat XL",
+		"description":"Optimum Hi-Resolution max. 2016 x 1512 @ 85Hz, Dot Pitch: 0.24mm",
+		"quantity":23,
+		"category":"Flat Screen Monitors"
+	},
+	{
+		"id":"HT-1040",
+		"name":"Laser Professional Eco",
+		"description":"Print 2400 dpi image quality color documents at speeds of up to 32 ppm (color) or 36 ppm (monochrome), letter/A4. Powerful 500 MHz processor, 512MB of memory",
+		"quantity":21,
+		"category":"Printers"
+	},
+	{
+		"id":"HT-1041",
+		"name":"Laser Basic",
+		"description":"Up to 22 ppm color or 24 ppm monochrome A4/letter, powerful 500 MHz processor and 128MB of memory",
+		"quantity":8,
+		"category":"Printers"
+	},
+	{
+		"id":"HT-1042",
+		"name":"Laser Allround",
+		"description":"Print up to 25 ppm letter and 24 ppm A4 color or monochrome, with Available first-page-out-time of less than 13 seconds for monochrome and less than 15 seconds for color",
+		"quantity":9,
+		"category":"Printers"
+	},
+	{
+		"id":"HT-1050",
+		"name":"Ultra Jet Super Color",
+		"description":"4800 dpi x 1200 dpi - up to 35 ppm (mono) / up to 34 ppm (color) - capacity: 250 sheets - Hi-Speed USB, Ethernet",
+		"quantity":17,
+		"category":"Printers"
+	},
+	{
+		"id":"HT-1051",
+		"name":"Ultra Jet Mobile",
+		"description":"1000 dpi x 1000 dpi - up to 35 ppm (mono) / up to 34 ppm (color) - capacity: 250 sheets - Hi-Speed USB - excellent dimensions for the small office",
+		"quantity":18,
+		"category":"Printers"
+	},
+	{
+		"id":"HT-1052",
+		"name":"Ultra Jet Super Highspeed",
+		"description":"4800 dpi x 1200 dpi - up to 35 ppm (mono) / up to 34 ppm (color) - capacity: 250 sheets - Hi-Speed USB2.0, Ethernet",
+		"quantity":25,
+		"category":"Printers"
+	},
+	{
+		"id":"HT-1055",
+		"name":"Multi Print",
+		"description":"1000 dpi x 1000 dpi - up to 16 ppm (mono) / up to 15 ppm (color)- capacity 80 sheets - scanner (216 x 297 mm, 1200dpi x 2400dpi)",
+		"quantity":16,
+		"category":"Multifunction Printers"
+	},
+	{
+		"id":"HT-1056",
+		"name":"Multi Color",
+		"description":"1200 dpi x 1200 dpi - up to 25 ppm (mono) / up to 24 ppm (color)- capacity 80 sheets - scanner (216 x 297 mm, 2400dpi x 4800dpi, high resolution)",
+		"quantity":5,
+		"category":"Multifunction Printers"
+	},
+	{
+		"id":"HT-1060",
+		"name":"Cordless Mouse",
+		"description":"Cordless Optical USB Mice, Laptop, Color: Black, Plug&Play",
+		"quantity":25,
+		"category":"Mice"
+	},
+	{
+		"id":"HT-1061",
+		"name":"Speed Mouse",
+		"description":"Optical USB, PS/2 Mouse, Color: Blue, 3-button-functionality (incl. Scroll wheel)",
+		"quantity":12,
+		"category":"Mice"
+	},
+	{
+		"id":"HT-1062",
+		"name":"Track Mouse",
+		"description":"Optical USB Mouse, Color: Red, 5-button-functionality(incl. Scroll wheel), Plug&Play",
+		"quantity":12,
+		"category":"Mice"
+	},
+	{
+		"id":"HT-1063",
+		"name":"Ergonomic Keyboard",
+		"description":"Ergonomic USB Keyboard for Desktop, Plug&Play",
+		"quantity":50,
+		"category":"Keyboards"
+	},
+	{
+		"id":"HT-1064",
+		"name":"Internet Keyboard",
+		"description":"Corded Keyboard with special keys for Internet Usability, USB",
+		"quantity":35,
+		"category":"Keyboards"
+	},
+	{
+		"id":"HT-1065",
+		"name":"Media Keyboard",
+		"description":"Corded Ergonomic Keyboard with special keys for Media Usability, USB",
+		"quantity":26,
+		"category":"Keyboards"
+	},
+	{
+		"id":"HT-1066",
+		"name":"Mousepad",
+		"description":"Nice mouse pad with ITelO Logo",
+		"quantity":12,
+		"category":"Mousepads"
+	},
+	{
+		"id":"HT-1067",
+		"name":"Ergo Mousepad",
+		"description":"Ergonomic mouse pad with ITelO Logo",
+		"quantity":16,
+		"category":"Mousepads"
+	},
+	{
+		"id":"HT-1068",
+		"name":"Designer Mousepad",
+		"description":"ITelO Mousepad Special Edition",
+		"quantity":26,
+		"category":"Mousepads"
+	},
+	{
+		"id":"HT-1069",
+		"name":"Universal card reader",
+		"description":"Universal card reader",
+		"quantity":22,
+		"category":"Computer System Accessories"
+	},
+	{
+		"id":"HT-1070",
+		"name":"Proctra X",
+		"description":"Proctra X: PCI-E GDDR5 3072MB",
+		"quantity":15,
+		"category":"Graphic Cards"
+	},
+	{
+		"id":"HT-1071",
+		"name":"Gladiator MX",
+		"description":"Gladiator XLN: PCI-E GDDR5 3072MB DVI Out, TV Out low-noise",
+		"quantity":16,
+		"category":"Graphic Cards"
+	},
+	{
+		"id":"HT-1072",
+		"name":"Hurricane GX",
+		"description":"Hurricane GX: PCI-E 691 GFLOPS game-optimized",
+		"quantity":13,
+		"category":"Graphic Cards"
+	},
+	{
+		"id":"HT-1073",
+		"name":"Hurricane GX/LN",
+		"description":"Hurricane GX/LN: PCI-E 691 GFLOPS game-optimized, low-noise.",
+		"quantity":5,
+		"category":"Graphic Cards"
+	},
+	{
+		"id":"HT-1080",
+		"name":"Photo Scan",
+		"description":"Flatbed scanner - 9.600 × 9.600 dpi - 216 x 297 mm - Hi-Speed USB - Bluetooth",
+		"quantity":8,
+		"category":"Scanners"
+	},
+	{
+		"id":"HT-1081",
+		"name":"Power Scan",
+		"description":"Flatbed scanner - 9.600 × 9.600 dpi - 216 x 297 mm - SCSI for backward compatibility",
+		"quantity":11,
+		"category":"Scanners"
+	},
+	{
+		"id":"HT-1082",
+		"name":"Jet Scan Professional",
+		"description":"Flatbed scanner - Letter - 2400 dpi x 2400 dpi - 216 x 297 mm - add-on module",
+		"quantity":13,
+		"category":"Scanners"
+	},
+	{
+		"id":"HT-1083",
+		"name":"Jet Scan Professional",
+		"description":"Flatbed scanner - A4 - 2400 dpi x 2400 dpi - 216 x 297 mm - add-on module",
+		"quantity":10,
+		"category":"Scanners"
+	},
+	{
+		"id":"HT-1085",
+		"name":"Copymaster",
+		"description":"Copymaster",
+		"quantity":10,
+		"category":"Multifunction Printers"
+	},
+	{
+		"id":"HT-1090",
+		"name":"Surround Sound",
+		"description":"PC multimedia speakers - 5 Watt (Total)",
+		"quantity":20,
+		"category":"Speakers"
+	},
+	{
+		"id":"HT-1091",
+		"name":"Blaster Extreme",
+		"description":"PC multimedia speakers - 10 Watt (Total) - 2-way",
+		"quantity":15,
+		"category":"Speakers"
+	},
+	{
+		"id":"HT-1092",
+		"name":"Sound Booster",
+		"description":"PC multimedia speakers - optimized for Blutooth/A2DP",
+		"quantity":50,
+		"category":"Speakers"
+	},
+	{
+		"id":"HT-1100",
+		"name":"Smart Office",
+		"description":"Complete package, 1 User, Office Applications (word processing, spreadsheet, presentations)",
+		"quantity":25,
+		"category":"Software"
+	},
+	{
+		"id":"HT-1101",
+		"name":"Smart Design",
+		"description":"Complete package, 1 User, Image editing, processing",
+		"quantity":26,
+		"category":"Software"
+	},
+	{
+		"id":"HT-1102",
+		"name":"Smart Network",
+		"description":"Complete package, 1 User, Network Software Utilities, Useful Applications and Documentation",
+		"quantity":28,
+		"category":"Software"
+	},
+	{
+		"id":"HT-1103",
+		"name":"Smart Multimedia",
+		"description":"Complete package, 1 User, different Multimedia applications, playing music, watching DVDs, only with this Smart package",
+		"quantity":9,
+		"category":"Software"
+	},
+	{
+		"id":"HT-1104",
+		"name":"Smart Games",
+		"description":"Complete package, 1 User, various games for amusement, logic, action, jump&run",
+		"quantity":13,
+		"category":"Software"
+	},
+	{
+		"id":"HT-1105",
+		"name":"Smart Internet Antivirus",
+		"description":"Complete package, 1 User, highly recommended for internet users as anti-virus protection",
+		"quantity":17,
+		"category":"Software"
+	},
+	{
+		"id":"HT-1106",
+		"name":"Smart Firewall",
+		"description":"Complete package, 1 User, recommended for internet users, protect your PC against cyber-crime",
+		"quantity":19,
+		"category":"Software"
+	},
+	{
+		"id":"HT-1107",
+		"name":"Smart Money",
+		"description":"Complete package, 1 User, bring your money in your mind, see what you have and what you want",
+		"quantity":18,
+		"category":"Software"
+	},
+	{
+		"id":"HT-1110",
+		"name":"PC Lock",
+		"description":"Robust 3m anti-burglary protection for your laptop computer",
+		"quantity":14,
+		"category":"Computer System Accessories"
+	},
+	{
+		"id":"HT-1111",
+		"name":"Notebook Lock",
+		"description":"Robust 1m anti-burglary protection for your desktop computer",
+		"quantity":20,
+		"category":"Computer System Accessories"
+	},
+	{
+		"id":"HT-1112",
+		"name":"Web cam reality",
+		"description":"Color webcam, color, High-Speed USB",
+		"quantity":27,
+		"category":"Computer System Accessories"
+	},
+	{
+		"id":"HT-1113",
+		"name":"Screen clean",
+		"description":"10 separately packed screen wipes",
+		"quantity":17,
+		"category":"Computer System Accessories"
+	},
+	{
+		"id":"HT-1114",
+		"name":"Fabric bag professional",
+		"description":"Notebook bag, plenty of room for stationery and writing materials",
+		"quantity":14,
+		"category":"Computer System Accessories"
+	},
+	{
+		"id":"HT-1115",
+		"name":"Wireless DSL Router",
+		"description":"Wireless DSL Router (available in blue, black and silver)",
+		"quantity":16,
+		"category":"Telecommunications"
+	},
+	{
+		"id":"HT-1116",
+		"name":"Wireless DSL Router / Repeater",
+		"description":"Wireless DSL Router / Repeater (available in blue, black and silver)",
+		"quantity":12,
+		"category":"Telecommunications"
+	},
+	{
+		"id":"HT-1117",
+		"name":"Wireless DSL Router / Repeater and Print Server",
+		"description":"Wireless DSL Router / Repeater and Print Server (available in blue, black and silver)",
+		"quantity":12,
+		"category":"Telecommunications"
+	},
+	{
+		"id":"HT-1118",
+		"name":"USB Stick",
+		"description":"USB 2.0 High-Speed 64 GB",
+		"quantity":14,
+		"category":"Computer System Accessories"
+	},
+	{
+		"id":"HT-1120",
+		"name":"Cordless Bluetooth Keyboard, english international",
+		"description":"Cordless Bluetooth Keyboard with English keys",
+		"quantity":13,
+		"category":"Keyboards"
+	},
+	{
+		"id":"HT-1137",
+		"name":"Flat XXL",
+		"description":"Optimum Hi-Resolution max. 2048 × 1536 @ 85Hz, Dot Pitch: 0.24mm",
+		"quantity":10,
+		"category":"Flat Screen Monitors"
+	},
+	{
+		"id":"HT-1138",
+		"name":"Pocket Mouse",
+		"description":"Portable pocket Mouse with retracting cord",
+		"quantity":20,
+		"category":"Mice"
+	},
+	{
+		"id":"HT-1210",
+		"name":"PC Power Station",
+		"description":"PC Power Station with 3,4 Ghz quad-core, 32 GB DDR3 SDRAM, feels like Available PC, Windows 8 Pro",
+		"quantity":22,
+		"category":"PCs"
+	},
+	{
+		"id":"HT-1500",
+		"name":"Server Basic",
+		"description":"Dual socket, quad-core processing server with 1333 MHz Front Side Bus with 10Gb connectivity",
+		"quantity":24,
+		"category":"Servers"
+	},
+	{
+		"id":"HT-1501",
+		"name":"Server Professional",
+		"description":"Dual socket, quad-core processing server with 1644 MHz Front Side Bus with 10Gb connectivity",
+		"quantity":26,
+		"category":"Servers"
+	},
+	{
+		"id":"HT-1502",
+		"name":"Server Power Pro",
+		"description":"Dual socket, quad-core processing server with 1644 MHz Front Side Bus with 100Gb connectivity",
+		"quantity":34,
+		"category":"Servers"
+	},
+	{
+		"id":"HT-6130",
+		"name":"Flat Watch HD32",
+		"description":"32-inch, 1366x768 Pixel, 16:9, HDTV ready",
+		"quantity":16,
+		"category":"Flat Screen TVs"
+	},
+	{
+		"id":"HT-6131",
+		"name":"Flat Watch HD37",
+		"description":"37-inch, 1366x768 Pixel, 16:9, HDTV ready",
+		"quantity":14,
+		"category":"Flat Screen TVs"
+	},
+	{
+		"id":"HT-6132",
+		"name":"Flat Watch HD41",
+		"description":"41-inch, 1366x768 Pixel, 16:9, HDTV ready",
+		"quantity":13,
+		"category":"Flat Screen TVs"
+	},
+	{
+		"id":"HT-7030",
+		"name":"Platinberry",
+		"description":"Our new multifunctional Handheld with phone function in platinum",
+		"quantity":12,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-7020",
+		"name":"Goldberry",
+		"description":"Our new multifunctional Handheld with phone function in gold",
+		"quantity":11,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-7010",
+		"name":"Silverberry",
+		"description":"Our new multifunctional Handheld with phone function in silver",
+		"quantity":9,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-7000",
+		"name":"Copperberry",
+		"description":"Our new multifunctional Handheld with phone function in copper",
+		"quantity":5,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-1095",
+		"name":"Lovely Sound 5.1 Wireless",
+		"description":"5.1 Headset, 40 Hz-20 kHz, Wireless",
+		"quantity":12,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-1096",
+		"name":"Lovely Sound 5.1",
+		"description":"5.1 Headset, 40 Hz-20 kHz, 3m cable",
+		"quantity":18,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-1097",
+		"name":"Lovely Sound Stereo",
+		"description":"5.1 Headset, 40 Hz-20 kHz, 1m cable",
+		"quantity":21,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-6123",
+		"name":"Power Pro Player 80",
+		"description":"MP3-Player with 80 GB SSD and Color Display, can play movies",
+		"quantity":13,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-6122",
+		"name":"Power Pro Player 40",
+		"description":"MP3-Player with 40 GB HDD and Color Display, can play movies",
+		"quantity":23,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-6121",
+		"name":"ITelo Jog-Mate",
+		"description":"ITelo Jog-Mate 64 GB HDD and Color Display, can play movies",
+		"quantity":24,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-6120",
+		"name":"ITelo MusicStick",
+		"description":"64 GB USB Music-on-Available-Stick",
+		"quantity":15,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-6111",
+		"name":"Record Movie",
+		"description":"160 GB HDD, CD-RW, DVD+R/RW, DVD-R/RW, MPEG 2 (Video-DVD), MPEG 4, VCD, SVCD, DivX, Xvid",
+		"quantity":24,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-6110",
+		"name":"Play Movie",
+		"description":"CD-RW, DVD+R/RW, DVD-R/RW, MPEG 2 (Video-DVD), MPEG 4, VCD, SVCD, DivX, Xvid",
+		"quantity":15,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-6102",
+		"name":"Beam Breaker B-3",
+		"description":"1080p, DLP max. 12,3 Meter, 3D-ready",
+		"quantity":16,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-6101",
+		"name":"Beam Breaker B-2",
+		"description":"1080p, DLP max.9,34 Meter, 2D-ready",
+		"quantity":18,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-2002",
+		"name":"Portable DVD Player with 9\" LCD Monitor",
+		"description":"9\" LCD Screen, storage holds up to 8 hours, 2 speakers included",
+		"quantity":50,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-6100",
+		"name":"Beam Breaker B-1",
+		"description":"720p, DLP Projector max. 8,45 Meter, 2D",
+		"quantity":32,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-2027",
+		"name":"Removable CD/DVD Laser Labels",
+		"description":"Removable jewel case labels, zero residues (100)",
+		"quantity":25,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-2026",
+		"name":"Audio/Video Cable Kit - 4m",
+		"description":"Quality cables for notebooks and projectors",
+		"quantity":16,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-2025",
+		"name":"CD/DVD case: 264 sleeves",
+		"description":"Organizer and protective case for 264 CDs and DVDs",
+		"quantity":26,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-2001",
+		"name":"10\" Portable DVD player",
+		"description":"10\" LCD Screen, storage battery holds up to 8 hours",
+		"quantity":21,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-2000",
+		"name":"7\" Widescreen Portable DVD Player w MP3",
+		"description":"7\" LCD Screen, storage battery holds up to 6 hours!",
+		"quantity":20,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-1603",
+		"name":"Gaming Monster Pro",
+		"description":"3,4 Ghz quad core, 16 GB DDR3 SDRAM, 4000 GB Hard Disc, Graphic Card: Hurricane GX, Windows 8",
+		"quantity":25,
+		"category":"Desktop Computers"
+	},
+	{
+		"id":"HT-1602",
+		"name":"Gaming Monster",
+		"description":"3,4 Ghz quad core, 8 GB DDR3 SDRAM, 2000 GB Hard Disc, Graphic Card: Gladiator MX, Windows 8",
+		"quantity":24,
+		"category":"Desktop Computers"
+	},
+	{
+		"id":"HT-1601",
+		"name":"Family PC Pro",
+		"description":"2,8 Ghz dual core, 4 GB DDR3 SDRAM, 1000 GB Hard Disc, Graphic Card: Gladiator MX, Windows 8",
+		"quantity":20,
+		"category":"Desktop Computers"
+	},
+	{
+		"id":"HT-1600",
+		"name":"Family PC Basic",
+		"description":"2,8 Ghz dual core, 4 GB DDR3 SDRAM, 500 GB Hard Disc, Graphic Card: Proctra X, Windows 8",
+		"quantity":10,
+		"category":"Desktop Computers"
+	},
+	{
+		"id":"HT-1119",
+		"name":"Travel Adapter",
+		"description":"Universal Travel Adapter",
+		"quantity":10,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-8000",
+		"name":"ITelO FlexTop I4000",
+		"description":"Notebook with 2,80 GHz dual core, 4 GB DDR3 SDRAM, 500 GB Hard Disc, Windows 8",
+		"quantity":11,
+		"category":"Laptops"
+	},
+	{
+		"id":"HT-8001",
+		"name":"ITelO FlexTop I6300c",
+		"description":"Notebook with 2,80 GHz dual core, 8 GB DDR3 SDRAM, 500 GB Hard Disc, Windows 8",
+		"quantity":20,
+		"category":"Laptops"
+	},
+	{
+		"id":"HT-8002",
+		"name":"ITelO FlexTop I9100",
+		"description":"Notebook with 2,80 GHz quad core, 4 GB DDR3 SDRAM, 1000 GB Hard Disc, Windows 8",
+		"quantity":20,
+		"category":"Laptops"
+	},
+	{
+		"id":"HT-8003",
+		"name":"ITelO FlexTop I9800",
+		"description":"Notebook with 2,80 GHz quad core, 8 GB DDR3 SDRAM, 1000 GB Hard Disc, Windows 8",
+		"quantity":22,
+		"category":"Laptops"
+	},
+	{
+		"id":"PF-1000",
+		"name":"Flyer",
+		"description":"Flyer for our product palette",
+		"quantity":33,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-9999",
+		"name":"Maxi Tablet",
+		"description":"10.1-inch Multitouch HD Screen (1280 x 800), 16GB Internal Memory, Wireless N Wi-Fi; Bluetooth, GPS Enabled, 1GHz Dual-Core Processor",
+		"quantity":20,
+		"category":"Tablets"
+	},
+	{
+		"id":"HT-9998",
+		"name":"Smartphone Beta",
+		"description":"5 Megapixel Camera, Wi-Fi 802.11 b/g/n, Bluetooth, GPS Available-GPS support",
+		"quantity":21,
+		"category":"Smartphones and Tablets"
+	},
+	{
+		"id":"HT-9997",
+		"name":"e-Book Reader ReadMe",
+		"description":"6-Inch E Ink Screen, Access To e-book Store, Adjustable Font Styles and Sizes, Stores Up To 1,000 Books",
+		"quantity":23,
+		"category":"Smartphones and Tablets"
+	},
+	{
+		"id":"HT-9996",
+		"name":"Tablet Pouch",
+		"description":"Stylish tablet pouch, protects from scratches, color: black",
+		"quantity":34,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-9995",
+		"name":"Smartphone Cover",
+		"description":"Durable high quality plastic bump-sleeve, lightweight, protects from scratches, rubber coating, multiple colors available, Accurate design and cut-outs for your device, snap-on design",
+		"quantity":23,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-9994",
+		"name":"Camcorder View",
+		"description":"1920x1080 Full HD, image stabilization reduces blur, 27x Optical / 32x Extended Zoom, wide angle Lens, 2.7\" wide LCD display",
+		"quantity":50,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-9993",
+		"name":"Mini Tablet",
+		"description":"7 inch 1280x800 HD display (216 ppi), Quad-core processor, 16 GB internal storage, 4325 mAh battery (Up to 8 hours of active use)",
+		"quantity":10,
+		"category":"Smartphones and Tablets"
+	},
+	{
+		"id":"HT-9992",
+		"name":"Smartphone Alpha",
+		"description":"7 inch 1280x800 HD display (216 ppi), Quad-core processor, 16 GB internal storage (actual formatted capacity will be less), 4325 mAh battery (Up to 8 hours of active use), white or black",
+		"quantity":13,
+		"category":"Smartphones and Tablets"
+	},
+	{
+		"id":"HT-9991",
+		"name":"Smartphone Leather Case",
+		"description":"Button Clasp, Quality Material, 100% Leather, compatible with many smartphone models",
+		"quantity":12,
+		"category":"Accessories"
+	},
+	{
+		"id":"HT-1251",
+		"name":"Astro Laptop 1516",
+		"description":"Flexible Laptop with 2,5 GHz Quad Core, 15\" HD TN, 16 GB DDR SDRAM, 256 GB SSD, Windows 10 Pro",
+		"quantity":23,
+		"category":"Laptops"
+	},
+	{
+		"id":"HT-1252",
+		"name":"Astro Phone 6",
+		"description":"6 inch 1280x800 HD display (216 ppi), Quad-core processor, 8 GB internal storage (actual formatted capacity will be less), 3050 mAh battery (Up to 8 hours of active use), grey or black",
+		"quantity":28,
+		"category":"Smartphones and Tablets"
+	},
+	{
+		"id":"HT-1253",
+		"name":"Benda Laptop 1408",
+		"description":"Flexible Laptop with 2,5 GHz Dual Core, 14\" HD+ TN, 8 GB DDR SDRAM, 324 GB SSD, Windows 10 Pro",
+		"quantity":27,
+		"category":"Laptops"
+	},
+	{
+		"id":"HT-1254",
+		"name":"Bending Screen 21HD",
+		"description":"Optimum Hi-Resolution Widescreen max. 1920 x 1080 @ 85Hz, Dot Pitch: 0.27mm, HDMI, Discontinued-Sub",
+		"quantity":23,
+		"category":"Flat Screens"
+	},
+	{
+		"id":"HT-1255",
+		"name":"Broad Screen 22HD",
+		"description":"Optimum Hi-Resolution Widescreen max. 2048 x 1080 @ 85Hz, Dot Pitch: 0.27mm, HDMI, Discontinued-Sub",
+		"quantity":5,
+		"category":"Flat Screens"
+	},
+	{
+		"id":"HT-1256",
+		"name":"Cerdik Phone 7",
+		"description":"7 inch 1280x800 HD display (216 ppi), Quad-core processor, 16 GB internal storage (actual formatted capacity will be less), 4325 mAh battery (Up to 8 hours of active use), white or black",
+		"quantity":19,
+		"category":"Smartphones and Tablets"
+	},
+	{
+		"id":"HT-1257",
+		"name":"Cepat Tablet 10.5",
+		"description":"10.5-inch Multitouch HD Screen (1280 x 800), 16GB Internal Memory, Wireless N Wi-Fi; Bluetooth, GPS Enabled, 1GHz Dual-Core Processor",
+		"quantity":17,
+		"category":"Smartphones and Tablets"
+	},
+	{
+		"id":"HT-1258",
+		"name":"Cepat Tablet 8",
+		"description":"8-inch Multitouch HD Screen (2000 x 1500) 32GB Internal Memory, Wireless N Wi-Fi, Bluetooth, GPS Enabled, 1.5 GHz Quad-Core Processor",
+		"quantity":24,
+		"category":"Smartphones and Tablets"
+	}
+ ]
