@@ -36,5 +36,8 @@
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.38.0",
     "through2": "^2.0.3"
+  },
+  "dependencies": {
+    "mysql2": "^1.6.1"
   }
 }
