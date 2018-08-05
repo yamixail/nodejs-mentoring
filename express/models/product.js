@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
 			description: DataTypes.STRING,
 			quantity: DataTypes.INTEGER,
 			category: DataTypes.STRING,
-			reviews: DataTypes.TEXT
+			reviews: DataTypes.ARRAY(DataTypes.TEXT)
 		},
 		{}
 	);
