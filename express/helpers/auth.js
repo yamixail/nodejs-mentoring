@@ -9,6 +9,5 @@ export const findUser = ({ login, password }) => {
 };
 
 export const checkUser = ({ login, password }) => {
-	console.log(login, password);
 	return login === user.login && password === user.password;
 };
