@@ -9,7 +9,10 @@ router
 	.get(productsController.getAll)
 	.post(productsController.createProduct);
 
-router.get("/:id", productsController.getProduct);
+router
+	.route("/:id")
+	.get(productsController.getProduct)
+	.delete(productsController.deleteProduct);
 
 router.get("/:id/reviews", productsController.getProductReviews);
 

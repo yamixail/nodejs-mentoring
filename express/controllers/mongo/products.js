@@ -11,7 +11,7 @@ products.getAll = (req, res) => {
 };
 
 products.createProduct = (req, res) => {
-	const { id, name, description, quantity, category, reviews } = req.body;
+	const { id, name, description, quantity, category } = req.body;
 
 	Product.create({
 		id,
@@ -31,6 +31,22 @@ products.createProduct = (req, res) => {
 
 products.getProduct = (req, res) => {
 	Product.findOne({ id: req.params.id })
+		.then(product => {
+			if (!product) {
+				return res.status(404).json({ message: "no such item" });
+			}
+
+			res.json(product);
+		})
+		.catch(err =>
+			res
+				.status(500)
+				.json({ message: "somthing went wrong" + err.message })
+		);
+};
+
+products.deleteProduct = (req, res) => {
+	Product.findOneAndRemove({ id: req.params.id })
 		.then(product => {
 			if (!product) {
 				return res.status(404).json({ message: "no such item" });
