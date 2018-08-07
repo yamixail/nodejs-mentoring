@@ -19,30 +19,6 @@ mongoose
 		`mongodb://localhost:27017/local`,
 		{ useNewUrlParser: true }
 	)
-	// .then(() =>
-	// 	Promise.all(
-	// 		users
-	// 			.map(user =>
-	// 				User.create(user)
-	// 					.then(item => console.log(item))
-	// 					.catch(console.error)
-	// 			)
-	// 			.concat(
-	// 				...products.map(product =>
-	// 					Product.create(product)
-	// 						.then(item => console.log(item))
-	// 						.catch(console.error)
-	// 				),
-	// 				...cities.map(city =>
-	// 					City.create(Object.assign(city, { id: ++id }))
-	// 						.then(item => console.log(item))
-	// 						.catch(console.error)
-	// 				)
-	// 			)
-	// 	)
-	// )
-	// .then(() => console.log("all data successfully imported"))
-	// .catch(console.error)
 	.then(() => app.listen(port))
 	.then(() => console.log(`App listening on port ${port}!`))
 	.catch(err => {
