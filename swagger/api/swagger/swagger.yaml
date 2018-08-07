@@ -1,0 +1,94 @@
+---
+swagger: "2.0"
+info:
+  description: This is a simple API
+  version: 1.0.0
+  title: Mentoring program API for homework
+  contact:
+    email: yamixail@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+host: localhost:10010
+basePath: /api
+tags:
+- name: cities
+  description: Operations with cities
+schemes:
+- http
+paths:
+  /cities:
+    x-swagger-router-controller: cities
+    get:
+      tags:
+      - cities
+      summary: searches cities
+      description: You can see all cities in the DB
+      operationId: searchCities
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        200:
+          description: search results matching criteria
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/City'
+        500:
+          description: something went wrong
+    post:
+      tags:
+      - cities
+      summary: adds an city
+      description: Adds an city to the system
+      operationId: addCity
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: city
+        description: City to add
+        required: false
+        schema:
+          $ref: '#/definitions/City'
+      responses:
+        201:
+          description: item created
+        400:
+          description: invalid input, object invalid
+        409:
+          description: an existing item already exists
+definitions:
+  City:
+    type: object
+    required:
+    - country
+    - id
+    - lat
+    - lng
+    - name
+    properties:
+      id:
+        type: number
+        example: 214.0
+      name:
+        type: string
+        example: Brest
+      country:
+        type: string
+        example: BY
+      lat:
+        type: number
+        example: 52.09755
+      lng:
+        type: number
+        example: 23.68775
+    example:
+      country: BY
+      lng: 23.68775
+      name: Brest
+      id: 214.0
+      lat: 52.09755
