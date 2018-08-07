@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon --exec node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "express": "nodemon --exec node ./express/startWithBabel.js"
+	"express": "nodemon --inspect=5858 --exec node ./express/startWithBabel.js"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,8 @@
     "through2": "^2.0.3"
   },
   "dependencies": {
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.6",
     "mysql2": "^1.6.1"
   }
 }
