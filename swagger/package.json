@@ -21,7 +21,7 @@
     "dotenv": "^1.2.0"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "node --inspect=5858 app.js",
     "test": "swagger project test"
   }
 }

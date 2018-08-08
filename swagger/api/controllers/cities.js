@@ -9,15 +9,7 @@ function searchCities(req, res) {
 }
 
 function addCity(req, res) {
-	const { id, name, country, lat, lng } = req.body;
-
-	City.create({
-		id,
-		name,
-		country,
-		lat: parseFloat(lat),
-		lng: parseFloat(lng)
-	})
+	City.create(req.swagger.city.value)
 		.then(item => res.json(item))
 		.catch(err => {
 			console.error(err);
